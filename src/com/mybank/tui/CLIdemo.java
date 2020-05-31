@@ -38,6 +38,8 @@ public class CLIdemo {
     }
 
     public void run() {
+	DataSource dataSource = new DataSource("C:\Users\Administrator\Desktop\test\tui-lab2-34-AbramovM\data\test.dat");
+        dataSource.loadData();
         AnsiConsole.systemInstall(); // needed to support ansi on Windows cmd
         printWelcomeMessage();
         LineReaderBuilder readerBuilder = LineReaderBuilder.builder();
